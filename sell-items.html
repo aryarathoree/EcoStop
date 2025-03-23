@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="EcoStop - Sell Items">
+  <title>EcoStop - Sell Items</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-image: url('images/otherpage.png'); background-size: cover; background-repeat: no-repeat;"></body>
+  <div class="container">
+    <h1 style="text-align: center; font-size: 50px;" >Sell Items</h1>
+    <form id="sell-form">
+      <div class="form-group">
+        <label for="product-name">Product Name</label>
+        <input type="text" id="product-name" placeholder="Product Name" required>
+      </div>
+      <div class="form-group">
+        <label for="price">Price</label>
+        <input type="number" id="price" placeholder="Price" required>
+      </div>
+      <div class="form-group">
+        <label for="location">City/Landmark</label>
+        <input type="text" id="location" placeholder="City/Landmark" required>
+      </div>
+      <div class="form-group">
+        <label for="description">Product Description</label>
+        <textarea id="description" placeholder="Enter product description" required></textarea>
+      </div>
+      <button type="submit" aria-label="List Item">List Item</button>
+    </form>
+  </div>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>

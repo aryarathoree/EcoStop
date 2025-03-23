@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="EcoStop - Your stop to contribute to sustainability">
+  <title>EcoStop</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Add custom styles for the About link */
+    
+  </style>
+</head>
+<body style="background-image: url('mainpage.png'); background-size: cover; width:100%; background-repeat: no-repeat;">
+  <!-- About Section Link -->
+  <a href="about.html" class="about-link">About</a>
+
+  <!-- Splash Screen -->
+  <div id="splash-screen">
+    <h1>EcoStop</h1>
+  </div>
+
+  <!-- Main Content -->
+  <div id="main-content" class="hidden">
+    <header class="main-intro">
+      <h1 class="headingEco">EcoStop</h1>
+      <p class="tt"><b>Your stop to contribute towards sustainability</b></p>
+    </header>
+    <div class="auth-options">
+      <button id="show-signup-btn" aria-label="Show Sign Up Form">Sign Up</button>
+      <button id="show-login-btn" aria-label="Show Login Form">Login</button>
+    </div>
+
+    <!-- Sign Up Form -->
+    <div id="signup-form-container" class="hidden">
+      <h2>Sign Up</h2>
+      <form id="signup-form">
+        <div class="form-group">
+          <label for="signup-email">Email</label>
+          <input type="email" id="signup-email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+          <label for="signup-password">Password</label>
+          <input type="password" id="signup-password" placeholder="Enter your password (min 6 characters)" minlength="6" required>
+        </div>
+        <button type="submit">Sign Up</button>
+        <button type="button" id="cancel-signup-btn">Cancel</button>
+      </form>
+      <p id="signup-error-message" class="error-message"></p>
+    </div>
+
+    <!-- Login Form -->
+    <div id="login-form-container" class="hidden">
+      <h2>Login</h2>
+      <form id="login-form">
+        <div class="form-group">
+          <label for="login-email">Email</label>
+          <input type="email" id="login-email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+          <label for="login-password">Password</label>
+          <input type="password" id="login-password" placeholder="Enter your password" required>
+        </div>
+        <button type="submit">Login</button>
+        <button type="button" id="cancel-login-btn">Cancel</button>
+      </form>
+      <p id="login-error-message" class="error-message"></p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    &copy; <a href="https://www.linkedin.com/in/arya-rathore-0b671528a/" class="arya">Arya Rathore</a>
+  </footer>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>

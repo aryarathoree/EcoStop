@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="EcoStop - Buy Items">
+  <title>EcoStop - Buy Items</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-image: url('images/otherpage.png'); background-size: cover; background-repeat: no-repeat;"></body>
+  <div class="container">
+    <h1 style="text-align: center; font-size: 50px;">Buy Items</h1>
+    <div class="filters">
+      <label for="city-filter">Filter by City:</label>
+      <input type="text" id="city-filter" placeholder="Enter your city">
+      <label for="radius-filter">Filter by Radius (km):</label>
+      <input type="number" id="radius-filter" placeholder="Enter radius in km" min="1" max="100">
+      <button id="apply-filter">Apply</button>
+    </div>
+
+    <!-- Items Grid -->
+    <div class="item-grid" id="item-grid">
+      <!-- Items will be dynamically added here -->
+    </div>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
